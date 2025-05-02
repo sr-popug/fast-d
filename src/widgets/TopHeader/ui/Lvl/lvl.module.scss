@@ -1,0 +1,45 @@
+.level {
+  display: flex;
+  gap: 2rem;
+  .lvl {
+    background: var(--bg-light-color);
+    border: var(--mega-light-bg) 2px solid;
+    padding: 7px 10px;
+    border-radius: 10px;
+    text-wrap: nowrap;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--accent);
+    span {
+      font-size: 1rem;
+      color: var(--text-color);
+      font-weight: 300;
+    }
+  }
+  .progress {
+    height: 39px;
+    width: 20rem;
+    border-radius: 10px;
+    border: 2px solid var(--mega-light-bg);
+
+    overflow: hidden;
+    background: var(--bg-light-color);
+
+    .value {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 100%;
+      border-radius: 10px 0 0 10px;
+      background: repeating-linear-gradient(
+        45deg,
+        #b73bf3,
+        #b73bf3 10px,
+        #a335da 10px,
+        #a335da 20px
+      );
+      transition: width 0.2s ease;
+    }
+  }
+}

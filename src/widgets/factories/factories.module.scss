@@ -1,0 +1,24 @@
+.factories {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 1rem;
+
+    list-style: none;
+  }
+  .notFound {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    opacity: 0.5;
+  }
+}

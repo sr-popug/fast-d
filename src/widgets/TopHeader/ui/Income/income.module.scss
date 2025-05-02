@@ -1,0 +1,16 @@
+.income {
+  font-size: 1.8rem;
+  background: var(--bg-light-color);
+  border: 2px solid var(--mega-light-bg);
+  border-radius: 10px;
+
+  padding: 8px 10px;
+  span {
+    color: var(--accent);
+    font-weight: 600;
+    span {
+      opacity: 0.7;
+      font-size: 1.2rem;
+    }
+  }
+}

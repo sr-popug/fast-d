@@ -1,0 +1,70 @@
+.card {
+  position: relative;
+  background: var(--bg-light-color);
+  padding: 1.5rem;
+  border: 2px solid var(--mega-light-bg);
+  border-radius: 10px;
+  img {
+    width: 250px;
+    height: 250px;
+  }
+  .text {
+    width: 250px;
+    h3 {
+      font-size: 2rem;
+      margin: 10px 0;
+    }
+    li {
+      list-style: circle;
+      p {
+        display: inline;
+        opacity: 0.8;
+      }
+      margin-left: 2cqh;
+      margin-top: 5apx;
+      font-size: 1.5rem;
+      span {
+        color: var(--accent);
+        font-weight: 600;
+        span {
+          font-weight: 300;
+          opacity: 1;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: none;
+      background: var(--accent);
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s ease background;
+      &:hover {
+        background: var(--dark-accent);
+      }
+    }
+    .blocked {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(15, 32, 74, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      p {
+        font-size: 22px;
+        text-align: center;
+      }
+    }
+  }
+}

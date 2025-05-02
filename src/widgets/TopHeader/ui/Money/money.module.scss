@@ -1,0 +1,27 @@
+.money {
+  position: relative;
+  display: flex;
+  gap: 1.5rem;
+
+  border: var(--mega-light-bg) 2px solid;
+  padding: 3px 10px;
+  background: var(--bg-light-color);
+  border-radius: 10px;
+  .difference {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    font-size: 1.6rem;
+  }
+  .line {
+    width: 2px;
+    background-color: var(--mega-light-bg);
+  }
+  .num {
+    text-wrap: nowrap;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    align-content: center;
+  }
+}
