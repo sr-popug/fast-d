@@ -3,7 +3,7 @@ import MyUpgrades from './ui/MyUpgrades/MyUpgrades'
 import NotBuyUpgrades from './ui/NotBuyUpgrades/NotBuyUpgrades'
 export default function Shop() {
   return (
-    <article className={styles.shop}>
+    <article clac sName={styles.shop}>
       <h1>Магазин</h1>
       <MyUpgrades />
       <NotBuyUpgrades />

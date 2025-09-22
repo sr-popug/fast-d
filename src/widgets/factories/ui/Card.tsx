@@ -2,7 +2,6 @@
 import { Factory } from '@/entities'
 import buyFactory from '@/features/buy-factory/buyFactory'
 import updateFactory from '@/features/upgrade-factory/upgradeFactory'
-import { motion } from 'motion/react'
 import Image from 'next/image'
 import BlockedCard from './BlockedCard'
 import styles from './card.module.scss'
@@ -30,11 +29,8 @@ export default function Card({
   } = factory
 
   return (
-    <motion.article
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.5 }}
-      transition={{ duration: 0.5, ease: 'easeInOut' }}
+    <article
+
       className={styles.card}
     >
       <Image src={image} width={300} height={300} alt={name} />
@@ -66,6 +62,6 @@ export default function Card({
         )}
         <BlockedCard levelUnlock={levelUnlock} />
       </article>
-    </motion.article>
+    </article>
   )
 }

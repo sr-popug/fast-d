@@ -9,14 +9,14 @@ import Card from '../Card'
 
 export default function NotBuyFactories() {
   const factoriesState = useSelector((state: RootState) => state.factory)
-
+  const appFactories = filterFactories(factories, factoriesState)
   return (
     <article className={styles.notByFactories}>
       <h2>Доступны к покупке</h2>
 
       <ul className={styles.flex}>
         <AnimatePresence>
-          {filterFactories(factories, factoriesState).map(el => (
+          {appFactories.map(el => (
             <motion.li
               key={el.name}
               initial={{ opacity: 0, scale: 0.5 }}
@@ -29,6 +29,11 @@ export default function NotBuyFactories() {
           ))}
         </AnimatePresence>
       </ul>
+      {!appFactories.length && (
+        <div className={styles.notFound}>
+          Похоже, вы выкупили все фабрики, поздравляем!
+        </div>
+      )}
     </article>
   )
 }
